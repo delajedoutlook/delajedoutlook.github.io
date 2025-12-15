@@ -1,0 +1,196 @@
+/**
+ * Header
+ */
+header {}
+
+  header > .container {
+
+    display: flex;
+    padding-top: 1rem;
+    padding-right: $gutter-width;
+    padding-bottom: 1rem;
+    padding-left: $gutter-width;
+
+  }
+
+    header > .container > .logo {
+
+      width: 64px;
+      height: 64px;
+
+    }
+
+/**
+ * Main
+ */
+main {}
+
+    main > article {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+      main > article > .container {
+
+        max-width: $column-8;
+        padding-left: $gutter-width;
+        padding-right: $gutter-width;
+        align-self: center;
+        padding-bottom: $gutter-width;
+        margin-bottom: $gutter-width;
+
+        @media screen and (min-width: 800px) {
+
+          padding-bottom: calc(2 * $gutter-width);
+
+        }
+
+      }
+
+        main > article > .container > header {
+
+          margin-top: $gutter-width;
+          margin-bottom: 1rem;
+
+          @media screen and (min-width: 800px) {
+
+            margin-top: calc(2 * $gutter-width);
+
+          }
+
+        }
+
+          main > article > .container > header > h1 {
+          
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1.802rem;
+            line-height: 1.25;
+            display: flex;
+            align-items: center;
+
+            @media screen and (min-width: 600px) {
+
+              font-size: 2.027rem;
+
+            }
+
+            @media screen and (min-width: 800px) {
+
+              font-size: 2.281rem;
+
+            }
+
+            @media screen and (min-width: 1000px) {
+
+              font-size: 2.566rem;
+
+            }
+            
+          }
+
+            main > article > .container > header > h1 > span {
+
+              display: block;
+
+            }
+
+            main > article > .container > header > h1 > svg {
+
+              display: block;
+              height: 2.2525rem;
+              width: auto;
+              margin-left: 4px;
+
+              @media screen and (min-width: 600px) {
+
+                height: 2.53375rem;
+
+              }
+
+              @media screen and (min-width: 800px) {
+
+                height: 2.85125rem;
+
+              }
+
+              @media screen and (min-width: 1000px) {
+
+                height: 3.2075rem;
+
+              }
+
+            }
+          
+          main > article > .container > header > h2 {
+
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1.802rem;
+            font-weight: 700;
+            line-height: 1.25;
+            color: $color-gray;
+
+            @media screen and (min-width: 600px) {
+
+              font-size: 2.027rem;
+
+            }
+
+            @media screen and (min-width: 800px) {
+
+              font-size: 2.281rem;
+
+            }
+
+            @media screen and (min-width: 1000px) {
+
+              font-size: 2.566rem;
+
+            }
+
+          }
+
+        main > article > .container > main {}
+
+          main > article > .container > main a {
+
+            color: $color-orange;
+            text-decoration: none;
+
+          }
+
+            main > article > .container > main a:hover {
+
+              text-decoration: underline;
+
+            }
+
+          main > article > .container > main p {
+
+            margin-top: 0;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+
+            @media screen and (min-width: 600px) {
+
+              font-size: 1.125rem;
+
+            }
+
+            @media screen and (min-width: 800px) {
+
+              font-size: 1.266rem;
+
+            }
+
+            @media screen and (min-width: 1000px) {
+
+              font-size: 1.424rem;
+
+            }
+
+          }
