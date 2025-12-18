@@ -1,196 +1,167 @@
 /**
  * Header
  */
-header {}
+header {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 
   header > .container {
 
-    display: flex;
-    padding-top: 1rem;
-    padding-right: $gutter-width;
-    padding-bottom: 1rem;
-    padding-left: $gutter-width;
+    max-width: $column-10;
+    margin: $gutter-width;
+    width: 100%;
 
   }
 
-    header > .container > .logo {
+    header > .container > .site-title {
 
-      width: 64px;
-      height: 64px;
+      display: flex;
+      justify-content: center;
 
     }
+
+      header > .container > .site-title > h1 {
+
+        font-size: 3.182rem;
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
+        
+
+      }
+
+        header > .container > .site-title > h1 > a {
+
+          color: $color-black;
+        
+        }
+
+
+        header > .container > .site-title > h1 > a:hover {
+
+          text-decoration: none;
+
+        }
 
 /**
  * Main
  */
 main {}
 
-    main > article {
+  main > aside {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+    main > aside > .container {
+
+      max-width: $column-10;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      margin: $gutter-width;
+      width: 100%;
 
     }
 
-      main > article > .container {
+      main > aside > .container > div {
 
-        max-width: $column-8;
-        padding-left: $gutter-width;
-        padding-right: $gutter-width;
-        align-self: center;
-        padding-bottom: $gutter-width;
-        margin-bottom: $gutter-width;
-
-        @media screen and (min-width: 800px) {
-
-          padding-bottom: calc(2 * $gutter-width);
-
-        }
+        max-width: $column-6;
+        width: 100%;
+        display: flex;
 
       }
 
-        main > article > .container > header {
+        main > aside > .container > div > div:first-child {
 
-          margin-top: $gutter-width;
-          margin-bottom: 1rem;
-
-          @media screen and (min-width: 800px) {
-
-            margin-top: calc(2 * $gutter-width);
-
-          }
+          max-width: $column-1;
+          margin-right: $gutter-width;
+          width: 100%;
 
         }
 
-          main > article > .container > header > h1 {
-          
-            margin-top: 0;
-            margin-bottom: 0;
-            font-size: 1.802rem;
-            line-height: 1.25;
-            display: flex;
-            align-items: center;
+        main > aside > .container > div > div:last-child {
 
-            @media screen and (min-width: 600px) {
+          max-width: $column-5;
+          width: 100%;
 
-              font-size: 2.027rem;
+        }
 
-            }
+          main > aside > .container > div > div:last-child > p {
 
-            @media screen and (min-width: 800px) {
-
-              font-size: 2.281rem;
-
-            }
-
-            @media screen and (min-width: 1000px) {
-
-              font-size: 2.566rem;
-
-            }
-            
-          }
-
-            main > article > .container > header > h1 > span {
-
-              display: block;
-
-            }
-
-            main > article > .container > header > h1 > svg {
-
-              display: block;
-              height: 2.2525rem;
-              width: auto;
-              margin-left: 4px;
-
-              @media screen and (min-width: 600px) {
-
-                height: 2.53375rem;
-
-              }
-
-              @media screen and (min-width: 800px) {
-
-                height: 2.85125rem;
-
-              }
-
-              @media screen and (min-width: 1000px) {
-
-                height: 3.2075rem;
-
-              }
-
-            }
-          
-          main > article > .container > header > h2 {
-
-            margin-top: 0;
-            margin-bottom: 0;
-            font-size: 1.802rem;
-            font-weight: 700;
-            line-height: 1.25;
-            color: $color-gray;
-
-            @media screen and (min-width: 600px) {
-
-              font-size: 2.027rem;
-
-            }
-
-            @media screen and (min-width: 800px) {
-
-              font-size: 2.281rem;
-
-            }
-
-            @media screen and (min-width: 1000px) {
-
-              font-size: 2.566rem;
-
-            }
+            font-style: italic;
+            font-size: 1.250rem;
 
           }
 
-        main > article > .container > main {}
+  main > section {
 
-          main > article > .container > main a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-            color: $color-orange;
-            text-decoration: none;
+  }
+
+    main > section > .container {
+
+      max-width: $column-10;
+      margin: $gutter-width;
+      width: 100%;
+
+    }
+
+      main > section > .container > h2 {
+
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.938rem;
+        text-align: center;
+        margin-bottom: $gutter-width;
+
+      }
+
+      main > section > .container > ul {
+
+        list-style-type: none;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+
+        main > section > .container > ul > li {
+
+          max-width: calc(($column-10 / 3) - $gutter-width);
+          width: 100%;
+          background-color: $color-gray;
+          border: 1px solid $color-black;
+          border-radius: 20px;
+          margin-right: $gutter-width;
+          padding: $gutter-width;
+          text-align: center;
+
+        }
+
+          main > section > .container > ul > li > h3 {
+
+            font-family: "Playfair Display", serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.562rem;
 
           }
 
-            main > article > .container > main a:hover {
+            main > section > .container > ul > li > h3 > a {
 
-              text-decoration: underline;
-
-            }
-
-          main > article > .container > main p {
-
-            margin-top: 0;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-
-            @media screen and (min-width: 600px) {
-
-              font-size: 1.125rem;
+              color: $color-black;
 
             }
-
-            @media screen and (min-width: 800px) {
-
-              font-size: 1.266rem;
-
-            }
-
-            @media screen and (min-width: 1000px) {
-
-              font-size: 1.424rem;
-
-            }
-
-          }

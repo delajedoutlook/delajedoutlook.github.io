@@ -12,8 +12,8 @@ $heading-font-weight: 700 !default;
 
 $spacing-unit:     30px !default;
 
-$color-black: #3A3A3A;
-$color-gray: #555555;
+$color-black: #272727;
+$color-gray: #FBF6FC;
 $color-orange: #EB4A3F;
 
 $text-color:       $color-black !default;
@@ -32,10 +32,14 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+$column-1: 86px;
+$column-3: 320px;
+$column-5: 554px;
+$column-6: 672px;
 $column-8: 786px;
-$column-10: 995px;
-$column-12: 1200px;
-$gutter-width: 2.125rem;
+$column-10: 1142px;
+$column-12: 1376px;
+$gutter-width: 32px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

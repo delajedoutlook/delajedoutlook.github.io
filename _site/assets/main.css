@@ -26,7 +26,7 @@ html {
 
 body {
   font: 400 16px/1.4 "Source Serif 4", serif;
-  color: #3A3A3A;
+  color: #272727;
   background-color: rgba(241, 242, 242, 0.3);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -102,7 +102,7 @@ a:visited {
   color: rgb(22.9483471074, 86.2541322314, 168.5516528926);
 }
 a:hover {
-  color: #3A3A3A;
+  color: #272727;
   text-decoration: underline;
 }
 .social-media-list a:hover {
@@ -204,7 +204,7 @@ table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
-  color: rgb(103.9, 103.9, 103.9);
+  color: rgb(84.9, 84.9, 84.9);
   border-collapse: collapse;
   border: 1px solid #e8e8e8;
 }
@@ -226,154 +226,127 @@ table td {
 /**
  * Header
  */
-header > .container {
+header {
   display: flex;
-  padding-top: 1rem;
-  padding-right: 2.125rem;
-  padding-bottom: 1rem;
-  padding-left: 2.125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-header > .container > .logo {
-  width: 64px;
-  height: 64px;
+header > .container {
+  max-width: 1142px;
+  margin: 32px;
+  width: 100%;
+}
+
+header > .container > .site-title {
+  display: flex;
+  justify-content: center;
+}
+
+header > .container > .site-title > h1 {
+  font-size: 3.182rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+header > .container > .site-title > h1 > a {
+  color: #272727;
+}
+
+header > .container > .site-title > h1 > a:hover {
+  text-decoration: none;
 }
 
 /**
  * Main
  */
-main > article {
+main > aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-main > article > .container {
-  max-width: 786px;
-  padding-left: 2.125rem;
-  padding-right: 2.125rem;
-  align-self: center;
-  padding-bottom: 2.125rem;
-  margin-bottom: 2.125rem;
-}
-@media screen and (min-width: 800px) {
-  main > article > .container {
-    padding-bottom: 4.25rem;
-  }
-}
-
-main > article > .container > header {
-  margin-top: 2.125rem;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 800px) {
-  main > article > .container > header {
-    margin-top: 4.25rem;
-  }
-}
-
-main > article > .container > header > h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.802rem;
-  line-height: 1.25;
-  display: flex;
   align-items: center;
 }
-@media screen and (min-width: 600px) {
-  main > article > .container > header > h1 {
-    font-size: 2.027rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  main > article > .container > header > h1 {
-    font-size: 2.281rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  main > article > .container > header > h1 {
-    font-size: 2.566rem;
-  }
+
+main > aside > .container {
+  max-width: 1142px;
+  display: flex;
+  margin: 32px;
+  width: 100%;
 }
 
-main > article > .container > header > h1 > span {
-  display: block;
+main > aside > .container > div {
+  max-width: 672px;
+  width: 100%;
+  display: flex;
 }
 
-main > article > .container > header > h1 > svg {
-  display: block;
-  height: 2.2525rem;
-  width: auto;
-  margin-left: 4px;
-}
-@media screen and (min-width: 600px) {
-  main > article > .container > header > h1 > svg {
-    height: 2.53375rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  main > article > .container > header > h1 > svg {
-    height: 2.85125rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  main > article > .container > header > h1 > svg {
-    height: 3.2075rem;
-  }
+main > aside > .container > div > div:first-child {
+  max-width: 86px;
+  margin-right: 32px;
+  width: 100%;
 }
 
-main > article > .container > header > h2 {
-  margin-top: 0;
+main > aside > .container > div > div:last-child {
+  max-width: 554px;
+  width: 100%;
+}
+
+main > aside > .container > div > div:last-child > p {
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section > .container {
+  max-width: 1142px;
+  margin: 32px;
+  width: 100%;
+}
+
+main > section > .container > h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.938rem;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+main > section > .container > ul {
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
-  font-size: 1.802rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: #555555;
-}
-@media screen and (min-width: 600px) {
-  main > article > .container > header > h2 {
-    font-size: 2.027rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  main > article > .container > header > h2 {
-    font-size: 2.281rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  main > article > .container > header > h2 {
-    font-size: 2.566rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
-main > article > .container > main a {
-  color: #EB4A3F;
-  text-decoration: none;
+main > section > .container > ul > li {
+  max-width: 348.6666666667px;
+  width: 100%;
+  background-color: #FBF6FC;
+  border: 1px solid #272727;
+  border-radius: 20px;
+  margin-right: 32px;
+  padding: 32px;
+  text-align: center;
 }
 
-main > article > .container > main a:hover {
-  text-decoration: underline;
+main > section > .container > ul > li > h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.562rem;
 }
 
-main > article > .container > main p {
-  margin-top: 0;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 600px) {
-  main > article > .container > main p {
-    font-size: 1.125rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  main > article > .container > main p {
-    font-size: 1.266rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  main > article > .container > main p {
-    font-size: 1.424rem;
-  }
+main > section > .container > ul > li > h3 > a {
+  color: #272727;
 }
 
 /**
