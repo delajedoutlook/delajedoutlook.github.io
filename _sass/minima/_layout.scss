@@ -7,173 +7,69 @@
   --column-10: 1142px;
   --column-12: 1376px;
   --gutter-width: 32px;
+  --border-radius: 20px;
+  --color-black: #272727;
+  --color-gray: #FBF6FC;
+  --font-family--heading: "Playfair Display", serif;
+  --font-family--body: "Source Serif 4",serif;
 }
 
+.posts {
 
-/**
- * Header
- */
-header {
+  .container-fluid {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    margin-left: var(--gutter-width);
+    margin-right: var(--gutter-width);
+    
+    h2 {
 
-}
+      font-family: var(--font-family--heading);
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
 
-  header > .container {
+    }
 
-    max-width: $column-10;
-    margin: $gutter-width;
-    width: 100%;
+    ul {
 
-  }
-
-    header > .container > .site-title {
-
+      list-style-type: none;
+      margin-left: 0;
+      margin-bottom: 0;
       display: flex;
-      justify-content: center;
+      flex-wrap: wrap;
 
-    }
+      li {
 
-      header > .container > .site-title > h1 {
-
-        font-size: 3.182rem;
-        font-weight: 700;
-        font-family: "Playfair Display", serif;
-        
-
-      }
-
-        header > .container > .site-title > h1 > a {
-
-          color: $color-black;
-        
-        }
-
-
-        header > .container > .site-title > h1 > a:hover {
-
-          text-decoration: none;
-
-        }
-
-/**
- * Main
- */
-main {}
-
-  main > aside {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-    main > aside > .container {
-
-      max-width: $column-10;
-      display: flex;
-      margin: $gutter-width;
-      width: 100%;
-
-    }
-
-      main > aside > .container > div {
-
-        max-width: $column-6;
-        width: 100%;
-        display: flex;
-
-      }
-
-        main > aside > .container > div > div:first-child {
-
-          max-width: $column-1;
-          margin-right: $gutter-width;
-          width: 100%;
-
-        }
-
-        main > aside > .container > div > div:last-child {
-
-          max-width: $column-5;
-          width: 100%;
-
-        }
-
-          main > aside > .container > div > div:last-child > p {
-
-            font-style: italic;
-            font-size: 1.250rem;
-
-          }
-
-  main > section {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-    main > section > .container {
-
-      max-width: $column-10;
-      margin: $gutter-width;
-      width: 100%;
-
-    }
-
-      main > section > .container > h2 {
-
-        font-family: "Playfair Display", serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 1.938rem;
+        border: 1px solid var(--color-black);
+        background-color: var(--color-gray);
+        border-radius: var(--border-radius);
         text-align: center;
-        margin-bottom: $gutter-width;
+        width: 100%;
+        padding: var(--gutter-width);
+        margin-bottom: var(--gutter-width);
 
-      }
+        span {}
 
-      main > section > .container > ul {
+        h3 {
 
-        list-style-type: none;
-        margin-left: 0;
-        margin-bottom: 0;
-        display: flex;
-        flex-wrap: wrap;
+          font-family: var(--font-family--heading);
+          text-transform: uppercase;
+          font-size: 1.250rem;
+          font-weight: 600;
+          margin-bottom: 0;
 
-      }
+          a {
 
-        main > section > .container > ul > li {
-
-          max-width: calc((var(--column-10) / 3) - var(--gutter-width));
-          width: 100%;
-          background-color: $color-gray;
-          border: 1px solid $color-black;
-          border-radius: 20px;
-          margin-right: $gutter-width;
-          padding: $gutter-width;
-          text-align: center;
-
-        }
-
-          main > section > .container > ul > li > h3 {
-
-            font-family: "Playfair Display", serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 1.562rem;
+            color: var(--color-black);
 
           }
 
-            main > section > .container > ul > li > h3 > a {
+        }
 
-              color: $color-black;
+      }
 
-            }
+    }
+
+  }
+
+}

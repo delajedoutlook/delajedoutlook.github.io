@@ -7,26 +7,31 @@ content:
     view:
       fields: [ title, published, date ]
     fields:
+      - name: title
+        label: Title
+        type: string
       - name: published
         label: Published
         type: boolean
         default: true
-      - name: image
-        label: Image
-        type: image
+      - name: tag
+        label: tag
+        type: select
+        options:
+          value: [ Reviews, Features ]
       - name: date
         label: Date
-        type: date
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
+        type: date        
       - name: layout
         label: Layout
         type: string
         default: post
+      - name: image
+        label: Image
+        type: image        
+      - name: body
+        label: Body
+        type: rich-text
   - name: config
     label: Jekyll config
     path: _config.yml

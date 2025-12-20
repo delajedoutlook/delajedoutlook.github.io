@@ -1,6 +1,6 @@
 ---
 published: true
-date: 2025-12-27
+date: 2025-12-17
 title: Hypothetical Baby exquisitely untangles abortion, white feminism, and
   Sylvia Plath
 layout: post
