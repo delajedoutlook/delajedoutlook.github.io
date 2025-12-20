@@ -15,10 +15,10 @@ content:
         type: boolean
         default: true
       - name: tag
-        label: tag
+        label: Tag
         type: select
         options:
-          value: [ Reviews, Features ]
+          values: [ Reviews, Features ]
       - name: date
         label: Date
         type: date        
