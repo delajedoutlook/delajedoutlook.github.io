@@ -3,7 +3,6 @@ content:
   - name: posts
     label: Posts
     type: collection
-    layout: post
     path: '_posts'
     view:
       fields: [ title, published, date ]
@@ -24,6 +23,10 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: layout
+        label: Layout
+        type: string
+        default: post
   - name: config
     label: Jekyll config
     path: _config.yml
