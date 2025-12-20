@@ -26,6 +26,7 @@ content:
         label: Layout
         type: string
         default: post
+        hidden: true
       - name: image
         label: Image
         type: image        
