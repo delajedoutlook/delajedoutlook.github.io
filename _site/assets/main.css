@@ -249,10 +249,11 @@ table td {
 }
 
 body {
-  background-image: url(../../assets/bg.svg);
-  background-size: 150% auto;
+  background-image: url(../../assets/pattern.svg);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top right -10em;
+  background-size: auto 120%;
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 1025px) {
