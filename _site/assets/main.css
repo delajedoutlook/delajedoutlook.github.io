@@ -248,12 +248,18 @@ table td {
   --font-family--body: "Source Serif 4",serif;
 }
 
-body {
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url(../../assets/pattern.svg);
   background-repeat: no-repeat;
-  background-position: top right -10em;
+  background-position: top right -30%;
   background-size: auto 120%;
-  background-attachment: fixed;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1025px) {
