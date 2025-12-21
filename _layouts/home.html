@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<aside>
-  <div class="container">
+<aside class="about">
+  <div class="container-fluid">
     <div>
       <div><img src="{{ site.avatar }}" alt=""></div>
       <div>
@@ -21,7 +21,7 @@ layout: default
         {%- for post in site.posts -%}
         <li>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span>{{ post.date | date: date_format }}</span>
+          <span>{{ post.tag }}</span>
           <h3>
             <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
