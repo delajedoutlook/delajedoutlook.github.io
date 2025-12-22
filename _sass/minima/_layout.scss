@@ -335,11 +335,22 @@ header {
 }
 
 .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   .container {
 
     margin-left: var(--gutter-width);
     margin-right: var(--gutter-width);
+
+
+    @media screen and (min-width: 1025px) {
+
+      max-width: 680px;
+
+    }
 
     .post-header {
 
@@ -355,10 +366,21 @@ header {
       h2 {
 
         font-family: var(--font-family--heading);
-        font-size: 1.938rem;
+        @include font-size(2.438rem);
         font-weight: 900;
         text-align: center;
         
+      }
+
+    }
+
+    .post-content {
+
+      p {
+
+        @include font-size(1.25rem);
+        line-height: 1.6;
+
       }
 
     }

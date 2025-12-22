@@ -482,9 +482,20 @@ header .site-title a:hover {
   color: var(--color-black);
 }
 
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .post .container {
   margin-left: var(--gutter-width);
   margin-right: var(--gutter-width);
+}
+@media screen and (min-width: 1025px) {
+  .post .container {
+    max-width: 680px;
+  }
 }
 .post .container .post-header time {
   display: block;
@@ -494,9 +505,20 @@ header .site-title a:hover {
 }
 .post .container .post-header h2 {
   font-family: var(--font-family--heading);
-  font-size: 1.938rem;
+  font-size: calc(1.3688rem + 1.4256vw);
+}
+@media (min-width: 1200px) {
+  .post .container .post-header h2 {
+    font-size: 2.438rem;
+  }
+}
+.post .container .post-header h2 {
   font-weight: 900;
   text-align: center;
+}
+.post .container .post-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 /**
