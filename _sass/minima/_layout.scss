@@ -1,3 +1,6 @@
+
+@import "../node_modules/rfs/scss";
+
 :root {
   --breakpoint-mobile-landscape: 481px;
   --breakpoint-tablet-portrait: 601px;
@@ -66,6 +69,8 @@ header {
   display: flex;
   justify-content: center;
   padding-top: var(--gutter-width);
+  margin-left: var(--gutter-width);
+  margin-right: var(--gutter-width);
 
   .site-title {
 
@@ -84,7 +89,7 @@ header {
       animation: 
       typing 3s steps(40, end),
       blink-caret .75s step-end 10;
-
+      @include font-size(2.438rem);
       /* The typing effect */
       @keyframes typing {
         from { width: 0 }
@@ -186,12 +191,7 @@ header {
         p {
 
           margin-bottom: 0;
-
-          @media screen and (min-width: 1025px) {
-            
-            font-size: 1.25rem;
-
-          }
+          @include font-size(1.25rem);
 
         }
 
@@ -221,17 +221,11 @@ header {
       font-weight: 400;
       text-transform: uppercase;
       text-align: center;
-      font-size: 1.562rem;
+      @include font-size(1.938rem);
       margin-bottom: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      @media screen and (min-width: 1025px) {
-
-        font-size: 1.938rem;
-
-      }
 
       &:after {
 
@@ -241,7 +235,6 @@ header {
         margin-top: calc((var(--gutter-width) / 4));
         height: 4px;
         background-color: var(--color-purple);
-
 
       }
 
@@ -321,15 +314,9 @@ header {
 
           font-family: var(--font-family--heading);
           text-transform: uppercase;
-          font-size: 1.250rem;
+          @include font-size(1.562rem);
           font-weight: 600;
           margin-bottom: 0;
-
-          @media screen and (min-width: 1025px) {
-
-            font-size: 1.562rem;
-
-          }
 
           a {
 
@@ -339,6 +326,39 @@ header {
 
         }
 
+      }
+
+    }
+
+  }
+
+}
+
+.post {
+
+  .container {
+
+    margin-left: var(--gutter-width);
+    margin-right: var(--gutter-width);
+
+    .post-header {
+
+      time {
+
+        display: block;
+        text-align: center;
+        font-family: var(--font-family--heading);
+        margin-bottom: var(--gutter-width);
+
+      }
+
+      h2 {
+
+        font-family: var(--font-family--heading);
+        font-size: 1.938rem;
+        font-weight: 900;
+        text-align: center;
+        
       }
 
     }

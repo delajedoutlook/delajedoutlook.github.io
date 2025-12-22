@@ -278,6 +278,8 @@ header {
   display: flex;
   justify-content: center;
   padding-top: var(--gutter-width);
+  margin-left: var(--gutter-width);
+  margin-right: var(--gutter-width);
 }
 header .site-title {
   display: inline-block;
@@ -292,6 +294,14 @@ header .site-title h1 {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.05em; /* Adjust as needed */
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end 10;
+  font-size: calc(1.3688rem + 1.4256vw);
+}
+@media (min-width: 1200px) {
+  header .site-title h1 {
+    font-size: 2.438rem;
+  }
+}
+header .site-title h1 {
   /* The typing effect */
 }
 @keyframes typing {
@@ -372,11 +382,7 @@ header .site-title a:hover {
 }
 .about .container-fluid > div div:last-child p {
   margin-bottom: 0;
-}
-@media screen and (min-width: 1025px) {
-  .about .container-fluid > div div:last-child p {
-    font-size: 1.25rem;
-  }
+  font-size: 1.25rem;
 }
 
 .posts {
@@ -394,16 +400,18 @@ header .site-title a:hover {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.562rem;
+  font-size: calc(1.3188rem + 0.8256vw);
+}
+@media (min-width: 1200px) {
+  .posts .container-fluid h2 {
+    font-size: 1.938rem;
+  }
+}
+.posts .container-fluid h2 {
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media screen and (min-width: 1025px) {
-  .posts .container-fluid h2 {
-    font-size: 1.938rem;
-  }
 }
 .posts .container-fluid h2:after {
   content: "";
@@ -459,17 +467,36 @@ header .site-title a:hover {
 .posts .container-fluid ul li h3 {
   font-family: var(--font-family--heading);
   text-transform: uppercase;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0;
+  font-size: calc(1.2812rem + 0.3744vw);
 }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1200px) {
   .posts .container-fluid ul li h3 {
     font-size: 1.562rem;
   }
 }
+.posts .container-fluid ul li h3 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
 .posts .container-fluid ul li h3 a {
   color: var(--color-black);
+}
+
+.post .container {
+  margin-left: var(--gutter-width);
+  margin-right: var(--gutter-width);
+}
+.post .container .post-header time {
+  display: block;
+  text-align: center;
+  font-family: var(--font-family--heading);
+  margin-bottom: var(--gutter-width);
+}
+.post .container .post-header h2 {
+  font-family: var(--font-family--heading);
+  font-size: 1.938rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 /**
