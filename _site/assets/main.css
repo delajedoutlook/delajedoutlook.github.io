@@ -173,6 +173,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 66.6666666667%;
   }
 }
+@media screen and (min-width: 1921px) {
+  #about .inner {
+    width: 50%;
+  }
+}
 #about figure {
   margin: 0;
 }
