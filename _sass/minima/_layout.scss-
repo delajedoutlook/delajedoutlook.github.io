@@ -1,5 +1,4 @@
 
-@import "../node_modules/rfs/scss";
 
 :root {
   --breakpoint-mobile-landscape: 481px;
@@ -43,6 +42,15 @@ body {
     background-size: auto 120%;
     z-index: -1;
 
+
+  }
+
+  &.home {
+
+    header {
+
+
+    }
 
   }
 
@@ -344,13 +352,7 @@ header {
 
     margin-left: var(--gutter-width);
     margin-right: var(--gutter-width);
-
-
-    @media screen and (min-width: 1025px) {
-
-      max-width: 680px;
-
-    }
+    max-width: var(--column-8);
 
     .post-header {
 
@@ -366,7 +368,7 @@ header {
       h2 {
 
         font-family: var(--font-family--heading);
-        @include font-size(2.438rem);
+        @include font-size(3.062rem);
         font-weight: 900;
         text-align: center;
         

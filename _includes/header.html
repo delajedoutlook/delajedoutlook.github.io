@@ -1,14 +1,11 @@
-<div class="graphic">
-</div>
-
-<header>
+<header id="site-header">
 
   <div class="container">
   
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-    <div class="site-title">
+    <div id="site-title">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     </div>
 

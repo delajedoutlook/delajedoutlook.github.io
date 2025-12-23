@@ -1,27 +1,29 @@
 ---
-layout: default
+layout: landing
 ---
 
-<aside class="about">
-  <div class="container-fluid">
-    <div>
-      <div><img src="{{ site.avatar }}" alt=""></div>
-      <div>
-        <p>{{ site.description }}</p>
-      </div>
+<aside id="about">
+  <div class="container">
+    <div class="inner">
+      <figure>
+        <img src="{{ site.avatar }}" alt="">
+      </figure>
+      <p>{{ site.description }}</p>
     </div>
   </div>
 </aside>
 
-<section class="posts">
-  <div class="container-fluid">
+<section id="posts">
+  <div class="container">
     {%- if site.posts.size > 0 -%}
       <h2>{{ page.list_title | default: "Selected Work" }}</h2>
       <ul>
         {%- for post in site.posts -%}
         <li>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span>{{ post.tag }}</span>
+          {%- if post.tag -%}
+            <span>{{ post.tag }}</span>
+          {%- endif -%}
           <h3>
             <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
@@ -36,3 +38,4 @@ layout: default
     {%- endif -%}
   </div>  
 </section>
+
