@@ -253,6 +253,11 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media screen and (min-width: 1921px) {
+  #posts ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 #posts ul li {
   border: 1px solid var(--color-black);
   background-color: var(--color-gray);
@@ -347,3 +352,5 @@ h1, h2, h3, h4, h5, h6 {
 #post .post--content p, #post .post--content li {
   font-size: 1.25rem;
 }
+
+/*# sourceMappingURL=main.css.map */
