@@ -28,10 +28,10 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../../assets/pattern.svg);
+  background-image: url(../../assets/pattern.svg), url(../../assets/pattern-02.svg);
   background-repeat: no-repeat;
-  background-position: top right -30%;
-  background-size: auto 120%;
+  background-position: top right -10vw, top 20vw right 75vw;
+  background-size: auto 120%, 100% auto;
   z-index: -1;
 }
 
