@@ -20,7 +20,8 @@
 
 title: Unpopular culture
 email: jed.delacruz@gmail.com
-description: This is a place for you to see [what] Sukh [has] writ[t]en. It will be mostly theatre reviews. Therefore, if you don't watch plays, you may be thinking this isn't the place for you. She's hoping it still is. And, even more loftily, that it may make you want to change that. # this means to ignore newlines until "baseurl:"
+description:
+summary: This is a place for you to see [what] Sukh [has] writ[t]en. It will be mostly theatre reviews. Therefore, if you don't watch plays, you may be thinking this isn't the place for you. She's hoping it still is. And, even more loftily, that it may make you want to change that. # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: delajed
