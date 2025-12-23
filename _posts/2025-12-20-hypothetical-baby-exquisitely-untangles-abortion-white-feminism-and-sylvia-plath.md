@@ -1,10 +1,11 @@
 ---
 title: Hypothetical Baby exquisitely untangles abortion, white feminism, and
   Sylvia Plath
-published: true
-tag: Reviews
 date: 2025-12-17
+tag: Reviews
 layout: post
+image: /media/erik-mclean-PFfA3xlHFbQ-unsplash.jpg
+published: true
 ---
 Rachel Cairns had an abortion.
 
