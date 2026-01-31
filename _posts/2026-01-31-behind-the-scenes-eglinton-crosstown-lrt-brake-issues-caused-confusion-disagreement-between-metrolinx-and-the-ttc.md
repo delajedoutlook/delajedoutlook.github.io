@@ -4,6 +4,7 @@ title: Behind the scenes, Eglinton Crosstown LRT brake issues caused confusion,
 date: 2026-01-31
 tag: Features
 layout: post
+image: /media/697d29e6556ee.image.jpg
 published: true
 ---
 **Behind-the-scenes disagreements and communication breakdowns between the TTC and Metrolinx over the safety of the** [**Eglinton Crosstown LRT**](https://www.thestar.com/news/gta/crosstown/) **spilled into the public this week, putting the line’s expected Feb. 8 opening date in jeopardy.**
