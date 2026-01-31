@@ -1,0 +1,14 @@
+---
+title: Wrap Your Troubles in Dreams
+date: 2026-01-30
+tag: Features
+layout: post
+published: true
+---
+In 1945, as the spring air of the Japanese countryside poured in through the unfinished roof of their house, twelve-year-old Yoko Ono and her little brother, Keisuke, scions of the fabulously powerful Yasuda family, stared into the blue sky and starved. Their money was worthless, and their rural neighbors had little pity for the city children driven to their Nagano house by war. Their mother, Isoko, had sent them and their baby sister, Setsuko, away from Tokyo after the US dropped 1,665 tons of incendiary bombs on the capital on March 9 of that year. That night Isoko gathered her two youngest and fled into their garden bunker. Yoko was sick, too febrile to move, and was left in her room as the smell of burning flesh smothered the city.
+
+Ono’s childhood was somber at the best of times. When she fell, her mother instructed her staff of nannies not to lift her up so that she would learn to help herself; in a 1974 essay in _Bungei Shunju_, she remembered “several women in kimono staring at me without offering a hand while I was trying to get up from the ground.” She saw her bank executive father by appointment. But at twelve years old she rose to the challenge of caring for her little siblings in Nagano, bartering antiques and jewels for rice and begging for food. In his intimate, generous new biography, _Yoko_, the journalist David Sheff relates that she saw her brother looking despondent and decided that they would imagine a menu together. He quotes an interview she gave in the late 1990s: “Lying on our backs, looking up at the sky through an opening in the roof, we exchanged menus in the air and used our powers of visualization to survive.”
+
+A neglected heiress who watched her city and her family’s wealth collapse in less than a year, a child for whom no thing or person was reliable, turned to her imagination not to escape her reality but to soften it. The power and permanence of the material world was, she could already see, greatly overstated. “There maybe a dream that two dream together,” she writes in her indispensable “To the Wesleyan People,” what she called a “footnote” to a performance and lecture she gave at Wesleyan College in 1966. “But there is no chair that two see together.”
+
+When Sheff interviewed Ono’s brother about that day in Nagano, Kei described it as her first work of conceptual art. “Eat this imaginary apple,” he remembered her saying. “It will fill you up.” And “it did fill her up,” he told Sheff. “She was good at imagining—but those words didn’t fill me up.” The question was how to share the dream.
